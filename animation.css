@@ -79,3 +79,52 @@
   filter: grayscale(70%);
   transform: scale(1.5);
 }
+
+/* ex 10 */
+.ex-10-icon{
+  -webkit-animation: rotating 2s linear infinite;
+}
+
+@-webkit-keyframes rotating {
+  from{
+    -webkit-transform: rotate(360deg);
+  }
+  to{
+    -webkit-transform: rotate(0);
+  }
+}
+
+/* ex 10 */
+.ex-10-icon{
+  animation: rotating 2s linear infinite;
+}
+
+@keyframes rotating {
+  0%{
+    transform: rotate(360deg);
+  }
+
+  100%{
+    transform: rotate(0);
+  }
+}
+
+/* ex 11 */
+.ex-11-icon:hover{
+  animation: rotating 2s;
+}
+
+@keyframes rotating {
+  0%{
+    transform: rotate(0);
+  }
+
+  90%{
+    transform: rotate(360deg);
+  }
+
+  100%{
+    transform: rotate(0);
+  }
+
+}

@@ -1,0 +1,16 @@
+/* ANIMAZIONI GENERALI */
+.ex-1-square{
+  transition: background 3s;
+}
+
+.ex-1-square:hover{
+  background-color: red;
+}
+
+.ex-2-square{
+  transition: width 2s;
+  transition-timing-function: ease;
+}
+.ex-2-square:active{
+  width: 100%;
+}

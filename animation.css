@@ -82,24 +82,24 @@
 
 /* ex 10 */
 .ex-10-icon{
-  -webkit-animation: rotating 2s linear infinite;
+  animation: rotating 2s linear infinite;
 }
 
-@-webkit-keyframes rotating {
-  from{
-    -webkit-transform: rotate(360deg);
+@keyframes rotating {
+  0%{
+    transform: rotate(360deg);
   }
-  to{
-    -webkit-transform: rotate(0);
+  100%{
+    transform: rotate(0);
   }
 }
 
 /* ex 10 */
 .ex-10-icon{
-  animation: rotating 2s linear infinite;
+  animation: rotatingone 1s linear infinite;
 }
 
-@keyframes rotating {
+@keyframes rotatingone {
   0%{
     transform: rotate(360deg);
   }
@@ -111,10 +111,10 @@
 
 /* ex 11 */
 .ex-11-icon:hover{
-  animation: rotating 2s;
+  animation: rotatingtwo 3s;
 }
 
-@keyframes rotating {
+@keyframes rotatingtwo {
   0%{
     transform: rotate(0);
   }
@@ -127,4 +127,129 @@
     transform: rotate(0);
   }
 
+}
+
+/* ex 12 */
+.ex-12-button:hover .ex-12-top-white{
+  animation: spaziounosopra 4s linear ;
+}
+
+@keyframes spaziounosopra {
+  0{
+    top: -10px;
+    left: 10%;
+  }
+
+  50%{
+    top: -10px;
+    left: calc(100% - 60px);
+  }
+
+  100%{
+    top: -10px;
+    left: 10%;
+  }
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+  animation: spaziounosotto 4s linear ;
+}
+
+@keyframes spaziounosotto {
+  0{
+    bottom: -10px;
+    right: 20%;
+  }
+
+  50%{
+    bottom: -10px;
+    right: calc(100% - 60px);
+  }
+
+  100%{
+    bottom: -10px;
+    right: 20%;
+  }
+}
+
+/* ex 13 */
+.ex-13-button:hover .ex-13-top-white{
+  animation: spazioduesopra 3s linear ;
+  /* regole di debug
+  background-color: blue;
+  /* fine debug */
+}
+
+@keyframes spazioduesopra {
+  0%{
+    top: -10px;
+    left: 10%;
+  }
+
+  25%{
+    top: -10px;
+    left: calc(100% - 30px);
+  }
+
+  50%{
+    top: calc(100% - 10px);
+    left: calc(100% - 30px);
+  }
+
+  75%{
+    top: calc(100% - 10px);
+    left: -30px;
+  }
+
+  90%{
+    top: -10px;
+    left: -30px;
+  }
+
+
+  100%{
+    top: -10px;
+    left: 10%;
+  }
+}
+
+/* ex 13 */
+.ex-13-button:hover .ex-13-bottom-white{
+  animation: spazioduesotto 3s linear ;
+  /* regole di debug
+  background-color: blue;
+  /* fine debug */
+}
+
+@keyframes spazioduesotto {
+  0%{
+    bottom: -10px;
+    right: 20%;
+  }
+
+  25%{
+    bottom: -10px;
+    right: calc(100% - 30px);
+  }
+
+  50%{
+    bottom: calc(100% - 10px);
+    right: calc(100% - 30px)
+  }
+
+  75%{
+    bottom: calc(100% - 10px);
+    right: -30px
+  }
+
+  90%{
+    bottom: -10px;
+    right: -30px;
+  }
+
+
+  100%{
+    bottom: -10px;
+    right: 20%;
+  }
 }

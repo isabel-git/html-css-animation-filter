@@ -56,7 +56,7 @@
 }
 
 .ex-7-img:hover{
-  filter: grayscale(100%);
+  filter: saturate(200%) grayscale(100%);
 }
 
 /* ex 8 */
@@ -65,7 +65,7 @@
 }
 
 .ex-8-img:hover{
-  filter: grayscale(70%);
+  filter: grayscale(70%) saturate(200%);
   border-radius: 30px;
 }
 
@@ -76,7 +76,7 @@
 
 .ex-9-img:hover{
   border-radius: 30px;
-  filter: grayscale(70%);
+  filter: grayscale(70%) saturate(200%);
   transform: scale(1.5);
 }
 
@@ -120,7 +120,7 @@
   }
 
   90%{
-    transform: rotate(360deg);
+    transform: rotate(270deg);
   }
 
   100%{
